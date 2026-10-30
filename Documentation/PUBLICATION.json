@@ -1,0 +1,11 @@
+{
+  "edition": "0.3-public",
+  "excluded_raw_asset_count": 304,
+  "excluded_roots": [
+    "Asset Store SchoolAssets",
+    "retired human models and import data",
+    "private development documentation and machine data"
+  ],
+  "runtime_changes": "None; optional art assertion and batch validation compatibility only",
+  "source_license": "Showcase, original rights reserved; separate third-party licenses apply"
+}

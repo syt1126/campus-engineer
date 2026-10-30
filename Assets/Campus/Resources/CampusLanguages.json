@@ -1,0 +1,999 @@
+{
+  "entries": [
+    {
+      "key": "無人課室仍在運轉",
+      "en": "The empty classroom is still running",
+      "sc": "无人课室仍在运转"
+    },
+    {
+      "key": "燈光為何反覆切換",
+      "en": "Why do the lights keep switching?",
+      "sc": "灯光为何反覆切换"
+    },
+    {
+      "key": "檢驗小芯的建議",
+      "en": "Test Chip's suggestion",
+      "sc": "检验小芯的建议"
+    },
+    {
+      "key": "歡迎來到校園工程隊。先推開203課室的門，看看發生了甚麼。",
+      "en": "Welcome to Campus Engineer. Open the door to classroom 203 and investigate.",
+      "sc": "欢迎来到校园工程队。先推开203课室的门，看看发生了甚麽。"
+    },
+    {
+      "key": "課室門已",
+      "en": "Classroom door: ",
+      "sc": "课室门已"
+    },
+    {
+      "key": "打開",
+      "en": "open",
+      "sc": "打开"
+    },
+    {
+      "key": "關閉",
+      "en": "closed",
+      "sc": "关闭"
+    },
+    {
+      "key": "連接標籤：TEMP 溫度 / OCC 有人狀態 / LUX 光照。這些是輸入，風扇和燈是輸出。",
+      "en": "Connection labels: TEMP = temperature, OCC = occupancy, LUX = light. These are inputs; the fan and lights are outputs.",
+      "sc": "连接标签：TEMP 温度 / OCC 有人状态 / LUX 光照。这些是输入，风扇和灯是输出。"
+    },
+    {
+      "key": "已取得數據板。到右側牆壁逐一檢查 TEMP、OCC 和 LUX 感測器。",
+      "en": "Data tablet collected. Check TEMP, OCC and LUX on the right wall.",
+      "sc": "已取得数据板。到右侧墙壁逐一检查 TEMP、OCC 和 LUX 感测器。"
+    },
+    {
+      "key": "先到講台拿取數據板，再讀取感測器。",
+      "en": "Pick up the data tablet from the teacher's desk first.",
+      "sc": "先到讲台拿取数据板，再读取感测器。"
+    },
+    {
+      "key": "溫度",
+      "en": "temperature",
+      "sc": "温度"
+    },
+    {
+      "key": "有人",
+      "en": "occupied",
+      "sc": "有人"
+    },
+    {
+      "key": "光線",
+      "en": "light",
+      "sc": "光线"
+    },
+    {
+      "key": "：記錄已加入數據板。所有數值均為教學模擬。",
+      "en": ": reading added to your tablet. All values are simulated.",
+      "sc": "：记录已加入数据板。所有数值均为教学模拟。"
+    },
+    {
+      "key": "控制器需要數據板。先到講台取得工具。",
+      "en": "Collect the data tablet from the teacher's desk to use the controller.",
+      "sc": "控制器需要数据板。先到讲台取得工具。"
+    },
+    {
+      "key": "窗邊自然光較亮。想一想：甚麼時候應該開燈？本樣章不模擬真實熱力學。",
+      "en": "Daylight is brighter by the windows. When should lights turn on? This chapter does not model real heat transfer.",
+      "sc": "窗边自然光较亮。想一想：甚麽时候应该开灯？本样章不模拟真实热力学。"
+    },
+    {
+      "key": "風扇是輸出設備。手動關閉不代表修好自動控制規則。",
+      "en": "The fan is an output. Switching it off manually does not repair the control rule.",
+      "sc": "风扇是输出设备。手动关闭不代表修好自动控制规则。"
+    },
+    {
+      "key": "燈是輸出設備。請比較有人狀態與光照，再決定何時需要開燈。",
+      "en": "Lights are outputs. Compare occupancy and light levels before deciding when to switch them on.",
+      "sc": "灯是输出设备。请比较有人状态与光照，再决定何时需要开灯。"
+    },
+    {
+      "key": "任務：滿足有人時段的設備需求，並消除無人空轉。比較結果前，先預測會發生甚麼。",
+      "en": "Mission: meet equipment needs when the room is occupied and avoid empty-room waste. Predict your result before testing.",
+      "sc": "任务：满足有人时段的设备需求，并消除无人空转。比较结果前，先预测会发生甚麽。"
+    },
+    {
+      "key": "先檢查『有人』輸入。空課室裡，單靠溫度判斷會發生甚麼？",
+      "en": "Check the occupancy input. What happens if temperature alone controls an empty classroom?",
+      "sc": "先检查『有人』输入。空课室里，单靠温度判断会发生甚麽？"
+    },
+    {
+      "key": "查看光照在300附近的變化。若每次都只比較同一條界線，燈會怎樣？可用雙閾值保留前一狀態。",
+      "en": "Look at light levels near 300 lux. What happens with a single boundary? Try two thresholds and remember the previous state.",
+      "sc": "查看光照在300附近的变化。若每次都只比较同一条界线，灯会怎样？可用双阈值保留前一状态。"
+    },
+    {
+      "key": "小芯說全部關閉最省電。先用全關方案找出反例，再恢復合理規則完成未見情境。",
+      "en": "Chip suggests switching everything off. Find a counterexample first, then restore sensible rules and test an unseen scenario.",
+      "sc": "小芯说全部关闭最省电。先用全关方案找出反例，再恢复合理规则完成未见情境。"
+    },
+    {
+      "key": "你已完成三段挑戰。到成果板查看測試證據，再想想這套模型與真實課室有甚麼差別。",
+      "en": "All three challenges are complete. Review your evidence and consider how this model differs from a real classroom.",
+      "sc": "你已完成三段挑战。到成果板查看测试证据，再想想这套模型与真实课室有甚麽差别。"
+    },
+    {
+      "key": "提示 / ",
+      "en": "Hint / ",
+      "sc": "提示 / "
+    },
+    {
+      "key": "儲存暫時失敗：",
+      "en": "Save unavailable: ",
+      "sc": "储存暂时失败："
+    },
+    {
+      "key": "存檔未能讀取，保留原檔並開始新體驗。",
+      "en": "Could not load the save. The original file is kept; a new session has started.",
+      "sc": "存档未能读取，保留原档并开始新体验。"
+    },
+    {
+      "key": "請先完成三種感測器的檢查，確保方案有觀察依據。",
+      "en": "Check all three sensors first so your design is based on observations.",
+      "sc": "请先完成三种感测器的检查，确保方案有观察依据。"
+    },
+    {
+      "key": "第",
+      "en": "Stage ",
+      "sc": "第"
+    },
+    {
+      "key": "段 / ",
+      "en": " / ",
+      "sc": "段 / "
+    },
+    {
+      "key": "檢驗全關",
+      "en": "Test all-off",
+      "sc": "检验全关"
+    },
+    {
+      "key": "測試方案",
+      "en": "Test design",
+      "sc": "测试方案"
+    },
+    {
+      "key": " / 錯誤 ",
+      "en": " / errors ",
+      "sc": " / 错误 "
+    },
+    {
+      "key": "修復完成！到成果板交付你的工程記錄。",
+      "en": "Repair complete! Deliver your engineering record at the evidence board.",
+      "sc": "修复完成！到成果板交付你的工程记录。"
+    },
+    {
+      "key": "返回",
+      "en": "Back",
+      "sc": "返回"
+    },
+    {
+      "key": "CAMPUS ENGINEER  /  校園工程師",
+      "en": "CAMPUS ENGINEER",
+      "sc": "CAMPUS ENGINEER  /  校园工程师"
+    },
+    {
+      "key": "修復完成  前往成果板",
+      "en": "Repair complete: visit the evidence board",
+      "sc": "修复完成  前往成果板"
+    },
+    {
+      "key": "下一步  到講台拿取數據板",
+      "en": "Next: collect the data tablet",
+      "sc": "下一步  到讲台拿取数据板"
+    },
+    {
+      "key": "下一步  檢查右牆 TEMP / OCC / LUX",
+      "en": "Next: inspect TEMP / OCC / LUX on the right wall",
+      "sc": "下一步  检查右墙 TEMP / OCC / LUX"
+    },
+    {
+      "key": "下一步  到成果板交付工程記錄",
+      "en": "Next: deliver your engineering record",
+      "sc": "下一步  到成果板交付工程记录"
+    },
+    {
+      "key": "下一步  前往控制終端測試方案",
+      "en": "Next: test your design at the controller",
+      "sc": "下一步  前往控制终端测试方案"
+    },
+    {
+      "key": "WASD 移動  ·  滑鼠觀察  ·  E 互動  ·  R 提示  ·  Tab 記錄  ·  Esc 暫停",
+      "en": "WASD move  ·  Mouse look  ·  E interact  ·  R hint  ·  Tab records  ·  Esc pause",
+      "sc": "WASD 移动  ·  滑鼠观察  ·  E 互动  ·  R 提示  ·  Tab 记录  ·  Esc 暂停"
+    },
+    {
+      "key": "校園工程師",
+      "en": "Campus Engineer",
+      "sc": "校园工程师"
+    },
+    {
+      "key": "香港校園 STEAM 第一人稱實驗樣章  /  0.2 開發版",
+      "en": "Hong Kong campus STEAM adventure  /  Preview 0.2",
+      "sc": "香港校园 STEAM 第一人称实验样章  /  0.2 开发版"
+    },
+    {
+      "key": "203課室沒有人，風扇卻一直轉。\n你能找出原因，讓系統作出合理決定嗎？",
+      "en": "Classroom 203 is empty, but the fan is still spinning.\nCan you find the cause and help the system make better decisions?",
+      "sc": "203课室没有人，风扇却一直转。\n你能找出原因，让系统作出合理决定吗？"
+    },
+    {
+      "key": "走進課室、拿取工具、檢查資料，再改進控制規則。小芯會陪你提出假設，但每個建議都要經過測試。\n目前是規則卡原型，Python 顯示為對應示例；教學機器人使用預設提示。",
+      "en": "Explore, collect tools, inspect readings and improve the control rules. Chip helps you form hypotheses; every suggestion needs a test.\nThis preview uses rule cards, equivalent Python examples and preset hints.",
+      "sc": "走进课室、拿取工具、检查资料，再改进控制规则。小芯会陪你提出假设，但每个建议都要经过测试。\n目前是规则卡原型，Python 显示为对应示例；教学机器人使用预设提示。"
+    },
+    {
+      "key": "開始新體驗",
+      "en": "Start a new adventure",
+      "sc": "开始新体验"
+    },
+    {
+      "key": "繼續上次記錄",
+      "en": "Continue",
+      "sc": "继续上次记录"
+    },
+    {
+      "key": "遊戲內數據與節能比例屬教學模擬，不代表真實課室標準。\n按 Esc 可隨時暫停並解除滑鼠鎖定。",
+      "en": "Readings and energy savings are teaching simulations, not real classroom standards.\nPress Esc to pause and release the mouse at any time.",
+      "sc": "游戏内数据与节能比例属教学模拟，不代表真实课室标准。\n按 Esc 可随时暂停并解除滑鼠锁定。"
+    },
+    {
+      "key": "控制終端  /  ",
+      "en": "Controller / ",
+      "sc": "控制终端  /  "
+    },
+    {
+      "key": "觀察 → 設計 → 測試 → 比較 → 改進",
+      "en": "Observe → Design → Test → Compare → Improve",
+      "sc": "观察 → 设计 → 测试 → 比较 → 改进"
+    },
+    {
+      "key": "構建你的控制規則",
+      "en": "Build your control rules",
+      "sc": "构建你的控制规则"
+    },
+    {
+      "key": "已啟用",
+      "en": "ON",
+      "sc": "已启用"
+    },
+    {
+      "key": "未啟用",
+      "en": "OFF",
+      "sc": "未启用"
+    },
+    {
+      "key": "  有人才允許設備啟動",
+      "en": "  Run equipment only when occupied",
+      "sc": "  有人才允许设备启动"
+    },
+    {
+      "key": "風扇閾值  ",
+      "en": "Fan threshold: ",
+      "sc": "风扇阈值  "
+    },
+    {
+      "key": "開燈閾值  ",
+      "en": "Light threshold: ",
+      "sc": "开灯阈值  "
+    },
+    {
+      "key": "  雙閾值與前一次狀態",
+      "en": "  Two thresholds + previous state",
+      "sc": "  双阈值与前一次状态"
+    },
+    {
+      "key": "對應 Python 示例  非自由程式執行",
+      "en": "Python equivalent  /  Code example only",
+      "sc": "对应 Python 示例  非自由程式执行"
+    },
+    {
+      "key": "運行測試",
+      "en": "Run test",
+      "sc": "运行测试"
+    },
+    {
+      "key": "檢驗全關建議",
+      "en": "Test all-off advice",
+      "sc": "检验全关建议"
+    },
+    {
+      "key": "實驗證據",
+      "en": "Experiment evidence",
+      "sc": "实验证据"
+    },
+    {
+      "key": "先運行一次測試。\n\n任務標準：有人且溫度 ≥28°C 時需要風扇；有人且光照 <300 lux 時需要燈。第二段另用280/320雙閾值。",
+      "en": "Run a test first.\n\nTargets: fan needed when occupied and ≥28°C; lights needed when occupied and <300 lux. Stage 2 uses 280/320 lux hysteresis.",
+      "sc": "先运行一次测试。\n\n任务标准：有人且温度 ≥28°C 时需要风扇；有人且光照 <300 lux 时需要灯。第二段另用280/320双阈值。"
+    },
+    {
+      "key": "全部情境符合要求",
+      "en": "All scenarios meet the targets",
+      "sc": "全部情境符合要求"
+    },
+    {
+      "key": "有 ",
+      "en": "",
+      "sc": "有 "
+    },
+    {
+      "key": " 個時段需要改進",
+      "en": " time slots need improvement",
+      "sc": " 个时段需要改进"
+    },
+    {
+      "key": "模擬電量 ",
+      "en": "Energy: ",
+      "sc": "模拟电量 "
+    },
+    {
+      "key": " kWh   /   空轉 ",
+      "en": " kWh   /   Empty-room use: ",
+      "sc": " kWh   /   空转 "
+    },
+    {
+      "key": " 分鐘\n相對全開基準減少 ",
+      "en": " min\nSaved vs all-on baseline: ",
+      "sc": " 分钟\n相对全开基准减少 "
+    },
+    {
+      "key": "%   /   切換 ",
+      "en": "%   /   Switches: ",
+      "sc": "%   /   切换 "
+    },
+    {
+      "key": " 次",
+      "en": "",
+      "sc": " 次"
+    },
+    {
+      "key": "正在回放全關方案  請比較需求與實際輸出",
+      "en": "Replaying all-off: compare demand with actual output",
+      "sc": "正在回放全关方案  请比较需求与实际输出"
+    },
+    {
+      "key": "顯示上一次實驗  規則改變後請重新測試",
+      "en": "Previous result shown. Rules changed; run another test.",
+      "sc": "显示上一次实验  规则改变後请重新测试"
+    },
+    {
+      "key": "第 ",
+      "en": "Minute ",
+      "sc": "第 "
+    },
+    {
+      "key": " 模擬分鐘  /  ",
+      "en": " / ",
+      "sc": " 模拟分钟  /  "
+    },
+    {
+      "key": "無人",
+      "en": "empty",
+      "sc": "无人"
+    },
+    {
+      "key": "\n溫度 ",
+      "en": "\nTemperature: ",
+      "sc": "\n温度 "
+    },
+    {
+      "key": "°C   光照 ",
+      "en": "°C   Light: ",
+      "sc": "°C   光照 "
+    },
+    {
+      "key": " lux\n輸出：風扇 ",
+      "en": " lux\nOutputs — fan: ",
+      "sc": " lux\n输出：风扇 "
+    },
+    {
+      "key": "開",
+      "en": "on",
+      "sc": "开"
+    },
+    {
+      "key": "關",
+      "en": "off",
+      "sc": "关"
+    },
+    {
+      "key": "   燈 ",
+      "en": "   lights: ",
+      "sc": "   灯 "
+    },
+    {
+      "key": "暫停回放",
+      "en": "Pause replay",
+      "sc": "暂停回放"
+    },
+    {
+      "key": "播放回放",
+      "en": "Play replay",
+      "sc": "播放回放"
+    },
+    {
+      "key": "進入下一段挑戰",
+      "en": "Next challenge",
+      "sc": "进入下一段挑战"
+    },
+    {
+      "key": "已完成！到成果板查看你的工程記錄。",
+      "en": "Complete! Review your engineering record at the evidence board.",
+      "sc": "已完成！到成果板查看你的工程记录。"
+    },
+    {
+      "key": "工程記錄",
+      "en": "Engineering record",
+      "sc": "工程记录"
+    },
+    {
+      "key": "以操作與測試留下學習證據  /  本地匿名記錄",
+      "en": "Evidence from your actions and tests  /  Local anonymous record",
+      "sc": "以操作与测试留下学习证据  /  本地匿名记录"
+    },
+    {
+      "key": "數據板 ",
+      "en": "Data tablet: ",
+      "sc": "数据板 "
+    },
+    {
+      "key": "已取得",
+      "en": "collected",
+      "sc": "已取得"
+    },
+    {
+      "key": "未取得",
+      "en": "missing",
+      "sc": "未取得"
+    },
+    {
+      "key": "任務完成  你用反例檢驗了建議，並完成新情境。",
+      "en": "Mission complete: you tested the advice and solved a new scenario.",
+      "sc": "任务完成  你用反例检验了建议，并完成新情境。"
+    },
+    {
+      "key": "進度  ",
+      "en": "Progress: ",
+      "sc": "进度  "
+    },
+    {
+      "key": "保存並導出本地記錄",
+      "en": "Save and export record",
+      "sc": "保存并导出本地记录"
+    },
+    {
+      "key": "已導出至 ",
+      "en": "Exported to ",
+      "sc": "已导出至 "
+    },
+    {
+      "key": "導出失敗：",
+      "en": "Export failed: ",
+      "sc": "导出失败："
+    },
+    {
+      "key": "通關不等於獨立掌握。教師仍需查看未見情境的表現與提示使用。",
+      "en": "Finishing is a start. Teachers can review unseen scenarios and hint use to check understanding.",
+      "sc": "通关不等於独立掌握。教师仍需查看未见情境的表现与提示使用。"
+    },
+    {
+      "key": "小芯的工程筆記",
+      "en": "Chip's engineering notebook",
+      "sc": "小芯的工程笔记"
+    },
+    {
+      "key": "預設教學提示  /  未連接生成式 AI 服務",
+      "en": "Preset teaching hints  /  Offline preview",
+      "sc": "预设教学提示  /  未连接生成式 AI 服务"
+    },
+    {
+      "key": "你可以提出自己的方案。請用實驗決定它是否合理，而不是只相信機器人的說法。",
+      "en": "Try your own design. Use evidence to judge it, and always check the robot's advice.",
+      "sc": "你可以提出自己的方案。请用实验决定它是否合理，而不是只相信机器人的说法。"
+    },
+    {
+      "key": "回到現場驗證",
+      "en": "Back to investigate",
+      "sc": "回到现场验证"
+    },
+    {
+      "key": "暫停",
+      "en": "Paused",
+      "sc": "暂停"
+    },
+    {
+      "key": "遊戲進度已保留  /  可自由離開滑鼠鎖定",
+      "en": "Your progress is kept  /  Mouse released",
+      "sc": "游戏进度已保留  /  可自由离开滑鼠锁定"
+    },
+    {
+      "key": "繼續探索",
+      "en": "Keep exploring",
+      "sc": "继续探索"
+    },
+    {
+      "key": "保存目前進度",
+      "en": "Save progress",
+      "sc": "保存目前进度"
+    },
+    {
+      "key": "進度已保存。",
+      "en": "Progress saved.",
+      "sc": "进度已保存。"
+    },
+    {
+      "key": "回到入口安全位置",
+      "en": "Return to entrance",
+      "sc": "回到入口安全位置"
+    },
+    {
+      "key": "低畫質  關閉陰影",
+      "en": "Low graphics: disable shadows",
+      "sc": "低画质  关闭阴影"
+    },
+    {
+      "key": "已關閉陰影。",
+      "en": "Shadows disabled.",
+      "sc": "已关闭阴影。"
+    },
+    {
+      "key": "離開遊戲",
+      "en": "Exit game",
+      "sc": "离开游戏"
+    },
+    {
+      "key": "切換為第一人稱自由移動",
+      "en": "Use first-person movement",
+      "sc": "切换为第一人称自由移动"
+    },
+    {
+      "key": "切換為固定視點點擊模式",
+      "en": "Use point-and-click viewpoints",
+      "sc": "切换为固定视点点击模式"
+    },
+    {
+      "key": "固定視點已啟用。返回場景後可點擊上方位置按鈕。",
+      "en": "Point-and-click enabled. Use the location buttons at the top of the scene.",
+      "sc": "固定视点已启用。返回场景後可点击上方位置按钮。"
+    },
+    {
+      "key": "已切換為自由移動。",
+      "en": "First-person movement enabled.",
+      "sc": "已切换为自由移动。"
+    },
+    {
+      "key": "操作\nWASD 移動 / 滑鼠觀察\nE 互動 / Tab 記錄 / R 提示\nEsc 暫停\n\n預設無鏡頭搖晃、無跳躍要求。",
+      "en": "Controls\nWASD move / Mouse look\nE interact / Tab records / R hint\nEsc pause\n\nNo camera shake or jumping required.",
+      "sc": "操作\nWASD 移动 / 滑鼠观察\nE 互动 / Tab 记录 / R 提示\nEsc 暂停\n\n预设无镜头摇晃、无跳跃要求。"
+    },
+    {
+      "key": "視角靈敏度",
+      "en": "Look sensitivity",
+      "sc": "视角灵敏度"
+    },
+    {
+      "key": "視野角度  ",
+      "en": "Field of view: ",
+      "sc": "视野角度  "
+    },
+    {
+      "key": "入口",
+      "en": "Entrance",
+      "sc": "入口"
+    },
+    {
+      "key": "感測器",
+      "en": "Sensors",
+      "sc": "感测器"
+    },
+    {
+      "key": "控制台",
+      "en": "Controller",
+      "sc": "控制台"
+    },
+    {
+      "key": "講台",
+      "en": "Desk",
+      "sc": "讲台"
+    },
+    {
+      "key": "窗邊花園",
+      "en": "Garden",
+      "sc": "窗边花园"
+    },
+    {
+      "key": "小芯與成果",
+      "en": "Chip & record",
+      "sc": "小芯与成果"
+    },
+    {
+      "key": "檢查窗邊光線",
+      "en": "Inspect window light",
+      "sc": "检查窗边光线"
+    },
+    {
+      "key": "推開課室門",
+      "en": "Open classroom door",
+      "sc": "推开课室门"
+    },
+    {
+      "key": "203   智慧課室",
+      "en": "203   Smart Classroom",
+      "sc": "203   智慧课室"
+    },
+    {
+      "key": "查看工程任務",
+      "en": "Read engineering mission",
+      "sc": "查看工程任务"
+    },
+    {
+      "key": "校園開放日工程隊\n觀察  設計  測試  改進",
+      "en": "Campus Open Day Engineers\nObserve  Design  Test  Improve",
+      "sc": "校园开放日工程队\n观察  设计  测试  改进"
+    },
+    {
+      "key": "打開控制終端",
+      "en": "Open controller",
+      "sc": "打开控制终端"
+    },
+    {
+      "key": "控制終端\nCONTROL",
+      "en": "CONTROLLER",
+      "sc": "控制终端\nCONTROL"
+    },
+    {
+      "key": "檢查溫度感測器",
+      "en": "Inspect temperature sensor",
+      "sc": "检查温度感测器"
+    },
+    {
+      "key": "檢查有人感測器",
+      "en": "Inspect occupancy sensor",
+      "sc": "检查有人感测器"
+    },
+    {
+      "key": "檢查光線感測器",
+      "en": "Inspect light sensor",
+      "sc": "检查光线感测器"
+    },
+    {
+      "key": "拿取數據板",
+      "en": "Collect data tablet",
+      "sc": "拿取数据板"
+    },
+    {
+      "key": "查看工程記錄",
+      "en": "View engineering record",
+      "sc": "查看工程记录"
+    },
+    {
+      "key": "工程記錄\nEVIDENCE",
+      "en": "EVIDENCE",
+      "sc": "工程记录\nEVIDENCE"
+    },
+    {
+      "key": "打開工具抽屜",
+      "en": "Open tool drawer",
+      "sc": "打开工具抽屉"
+    },
+    {
+      "key": "檢查風扇狀態",
+      "en": "Inspect fan",
+      "sc": "检查风扇状态"
+    },
+    {
+      "key": "檢查燈光狀態",
+      "en": "Inspect lights",
+      "sc": "检查灯光状态"
+    },
+    {
+      "key": "工程隊提示\n先觀察，再測試",
+      "en": "Engineer's tip\nObserve, then test",
+      "sc": "工程队提示\n先观察，再测试"
+    },
+    {
+      "key": "提出\n假設",
+      "en": "Ask a\nquestion",
+      "sc": "提出\n假设"
+    },
+    {
+      "key": "比較\n證據",
+      "en": "Compare\nevidence",
+      "sc": "比较\n证据"
+    },
+    {
+      "key": "分享\n發現",
+      "en": "Share\ndiscoveries",
+      "sc": "分享\n发现"
+    },
+    {
+      "key": "我們的發現",
+      "en": "Our discoveries",
+      "sc": "我们的发现"
+    },
+    {
+      "key": "想一想\n為甚麼？",
+      "en": "Think\nWhy?",
+      "sc": "想一想\n为甚麽？"
+    },
+    {
+      "key": "試一試\n有證據嗎？",
+      "en": "Test\nAny evidence?",
+      "sc": "试一试\n有证据吗？"
+    },
+    {
+      "key": "分享\n新發現",
+      "en": "Share\na discovery",
+      "sc": "分享\n新发现"
+    },
+    {
+      "key": "小芯 / Teaching companion",
+      "en": "Chip / Teaching companion",
+      "sc": "小芯 / Teaching companion"
+    },
+    {
+      "key": "與小芯討論  預設教學提示",
+      "en": "Talk to Chip / Preset hints",
+      "sc": "与小芯讨论  预设教学提示"
+    },
+    {
+      "key": "陳老師 / Fictional mentor",
+      "en": "Campus guide / Fictional mentor",
+      "sc": "陈老师 / Fictional mentor"
+    },
+    {
+      "key": "向陳老師請教",
+      "en": "Ask the campus guide",
+      "sc": "向陈老师请教"
+    },
+    {
+      "key": "# 全關方案  用反例檢驗它\nfan = False\nlight = False",
+      "en": "# All-off design: test a counterexample\nfan = False\nlight = False",
+      "sc": "# 全关方案  用反例检验它\nfan = False\nlight = False"
+    },
+    {
+      "key": "# 全開方案\nfan = True\nlight = True",
+      "en": "# All-on design\nfan = True\nlight = True",
+      "sc": "# 全开方案\nfan = True\nlight = True"
+    },
+    {
+      "key": "\n# 雙閾值模式會參考上一次 light 狀態",
+      "en": "\n# Hysteresis remembers the previous light state",
+      "sc": "\n# 双阈值模式会参考上一次 light 状态"
+    },
+    {
+      "key": "語言 / Language",
+      "en": "Language",
+      "sc": "语言 / Language"
+    },
+    {
+      "key": "校園嚮導",
+      "en": "Campus guide",
+      "sc": "校园向导"
+    },
+    {
+      "key": "與校園嚮導交流",
+      "en": "Talk to the campus guide",
+      "sc": "与校园向导交流"
+    },
+    {
+      "key": "校園小組自習區",
+      "en": "Campus study corner",
+      "sc": "校园小组自习区"
+    },
+    {
+      "key": "儲物櫃與學習工具",
+      "en": "Lockers & learning tools",
+      "sc": "储物柜与学习工具"
+    },
+    {
+      "key": "輕量校園美術預覽",
+      "en": "Campus art preview",
+      "sc": "轻量校园美术预览"
+    },
+    {
+      "key": "課後科學社",
+      "en": "After-school science club",
+      "sc": "课後科学社"
+    },
+    {
+      "key": "你的旋律被記住了。試試用不同次序，創作自己的下課鈴！",
+      "sc": "你的旋律被记住了。试试用不同次序，创作自己的下课铃！",
+      "en": "Your melody is a keepsake! Try a different order and make your own recess bell."
+    },
+    {
+      "key": "叮！每根琴鍵都有不同的聲音。試著彈出自己的旋律。",
+      "sc": "叮！每根琴键都有不同的声音。试着弹出自己的旋律。",
+      "en": "Each wooden key has its own sound. Try making a melody."
+    },
+    {
+      "key": "風鈴響了，窗外的小鳥也回應了你。",
+      "sc": "风铃响了，窗外的小鸟也回应了你。",
+      "en": "The chime rings gently, keeping a little memory of this moment."
+    },
+    {
+      "key": "找到一顆紙星星！它會留在你的發現手帳裡。",
+      "sc": "找到一颗纸星星！它会留在你的发现手帐里。",
+      "en": "A hidden paper star! It is now in your discovery journal."
+    },
+    {
+      "key": "紙飛機出發！它會繞過桌椅，再飛回你的窗邊。",
+      "sc": "纸飞机出发！它会绕过桌椅，再飞回你的窗边。",
+      "en": "Your paper plane is off! Watch it loop around the classroom and come home."
+    },
+    {
+      "key": "完美降落！紙飛機飛行章已加入發現手帳。",
+      "sc": "完美降落！纸飞机飞行章已加入发现手帐。",
+      "en": "A perfect landing! Your paper plane badge is in the journal."
+    },
+    {
+      "key": "慢慢倒一點水……看看花苞有甚麼變化。",
+      "sc": "慢慢倒一点水……看看花苞有甚麽变化。",
+      "en": "Pour a little water slowly... watch what happens to the flower bud."
+    },
+    {
+      "key": "花開了！窗邊多了一點顏色，謝謝你的照顧。",
+      "sc": "花开了！窗边多了一点颜色，谢谢你的照顾。",
+      "en": "It bloomed! Thank you for bringing a little colour to the window."
+    },
+    {
+      "key": "放飛紙飛機",
+      "sc": "放飞纸飞机",
+      "en": "Launch the paper plane"
+    },
+    {
+      "key": "彈奏彩色木琴",
+      "sc": "弹奏彩色木琴",
+      "en": "Play a wooden key"
+    },
+    {
+      "key": "給窗邊的花澆水",
+      "sc": "给窗边的花浇水",
+      "en": "Water the window flower"
+    },
+    {
+      "key": "輕碰窗邊風鈴",
+      "sc": "轻碰窗边风铃",
+      "en": "Ring the window chime"
+    },
+    {
+      "key": "收集藏起來的紙星星",
+      "sc": "收集藏起来的纸星星",
+      "en": "Collect the hidden paper star"
+    },
+    {
+      "key": "和小嵐打招呼",
+      "sc": "和小岚打招呼",
+      "en": "Say hello to Lan"
+    },
+    {
+      "key": "發現手帳  J  ·  ",
+      "sc": "发现手帐  J  ·  ",
+      "en": "Discovery journal  J  ·  "
+    },
+    {
+      "key": "香港校園 STEAM 第一人稱實驗樣章  /  0.3 開發版",
+      "sc": "香港校园 STEAM 第一人称实验样章  /  0.3 开发版",
+      "en": "Hong Kong campus STEAM adventure  /  Preview 0.3"
+    },
+    {
+      "key": "和小嵐開心擊掌",
+      "sc": "和小岚开心击掌",
+      "en": "High-five Lan"
+    },
+    {
+      "key": "耶！小嵐很高興和你一起探索校園。",
+      "sc": "耶！小岚很高兴和你一起探索校园。",
+      "en": "High-five! Lan is happy to explore the campus with you."
+    },
+    {
+      "key": "課間發現手帳",
+      "sc": "课间发现手帐",
+      "en": "Recess discovery journal"
+    },
+    {
+      "key": "學習之外，也可以慢慢探索、玩一會兒。這些活動不影響工程任務。 ",
+      "sc": "学习之外，也可以慢慢探索、玩一会儿。这些活动不影响工程任务。 ",
+      "en": "Take your time and play. These optional discoveries do not affect your engineering mission."
+    },
+    {
+      "key": "紙飛機飛行章",
+      "sc": "纸飞机飞行章",
+      "en": "Paper plane pilot"
+    },
+    {
+      "key": "窗邊小園丁",
+      "sc": "窗边小园丁",
+      "en": "Window gardener"
+    },
+    {
+      "key": "自己的下課旋律",
+      "sc": "自己的下课旋律",
+      "en": "Your own recess melody"
+    },
+    {
+      "key": "聽見風的聲音",
+      "sc": "听见风的声音",
+      "en": "A little voice of the wind"
+    },
+    {
+      "key": "書架裡的紙星星",
+      "sc": "书架里的纸星星",
+      "en": "A star in the bookshelf"
+    },
+    {
+      "key": "儲物櫃上的紙星星",
+      "sc": "储物柜上的纸星星",
+      "en": "A star on the lockers"
+    },
+    {
+      "key": "同學留下的紙星星",
+      "sc": "同学留下的纸星星",
+      "en": "A star left by a classmate"
+    },
+    {
+      "key": "找找課室左側桌上的紙飛機。",
+      "sc": "找找课室左侧桌上的纸飞机。",
+      "en": "Look for a folded paper plane on a desk on the left."
+    },
+    {
+      "key": "窗邊的澆水壺正在等你。",
+      "sc": "窗边的浇水壶正在等你。",
+      "en": "A watering can is waiting by the window."
+    },
+    {
+      "key": "閱讀角有一台能真的彈奏的木琴。",
+      "sc": "阅读角有一台能真的弹奏的木琴。",
+      "en": "There is a playable xylophone in the reading corner."
+    },
+    {
+      "key": "輕碰窗邊掛著的風鈴。",
+      "sc": "轻碰窗边挂着的风铃。",
+      "en": "Gently ring the chime by the window."
+    },
+    {
+      "key": "慢慢看看閱讀角。",
+      "sc": "慢慢看看阅读角。",
+      "en": "Take a closer look at the reading corner."
+    },
+    {
+      "key": "留意儲物櫃的小角落。",
+      "sc": "留意储物柜的小角落。",
+      "en": "Look around the little corners of the lockers."
+    },
+    {
+      "key": "桌面上有個閃亮的小秘密。",
+      "sc": "桌面上有个闪亮的小秘密。",
+      "en": "A tiny shining secret is waiting on a desk."
+    },
+    {
+      "key": "已收入你的校園回憶",
+      "sc": "已收入你的校园回忆",
+      "en": "Saved in your campus memories"
+    },
+    {
+      "key": "操作\nWASD 移動 / 滑鼠觀察\nE 互動 / Tab 記錄 / R 提示\nJ 發現手帳 / Esc 暫停\n\n預設無鏡頭搖晃、無跳躍要求。",
+      "sc": "操作\nWASD 移动 / 滑鼠观察\nE 互动 / Tab 记录 / R 提示\nJ 发现手帐 / Esc 暂停\n\n预设无镜头摇晃、无跳跃要求。",
+      "en": "Controls\nWASD move / Mouse look\nE interact / Tab records / R hints\nJ discovery journal / Esc pause\n\nNo camera shake or jumping required."
+    },
+    {
+      "key": "紙飛機",
+      "sc": "纸飞机",
+      "en": "Paper plane"
+    },
+    {
+      "key": "音樂角",
+      "sc": "音乐角",
+      "en": "Music corner"
+    },
+    {
+      "key": "窗邊小花",
+      "sc": "窗边小花",
+      "en": "Window flower"
+    }
+  ]
+}

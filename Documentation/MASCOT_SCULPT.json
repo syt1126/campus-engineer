@@ -1,0 +1,37 @@
+{
+  "type": "original continuous signed-distance sculpt, connected facial/ear/muzzle topology",
+  "file": "Assets/Campus/Resources/MascotSculpt.bytes",
+  "meshes": [
+    {
+      "name": "Head",
+      "vertices": 86310,
+      "triangles": 172612
+    },
+    {
+      "name": "Body",
+      "vertices": 34742,
+      "triangles": 69512
+    },
+    {
+      "name": "Arm",
+      "vertices": 20282,
+      "triangles": 40560
+    },
+    {
+      "name": "Paw",
+      "vertices": 15098,
+      "triangles": 30192
+    },
+    {
+      "name": "Overalls",
+      "vertices": 40183,
+      "triangles": 80380
+    },
+    {
+      "name": "Tail",
+      "vertices": 1540,
+      "triangles": 3024
+    }
+  ],
+  "sha256": "84095f2a7f66b9851452ae927c109c4bf0edd99549b833eef8eda9a0d81136e2"
+}

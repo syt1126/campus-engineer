@@ -1,0 +1,19 @@
+{
+  "edition": "0.3-public",
+  "checked_at": "2026-10-30T09:44:23.962905+08:00",
+  "unity_editor": "2022.3.46f1c1",
+  "mode": "Unity batch mode, graphics enabled",
+  "integration_checks": 46,
+  "integration_status": "passed",
+  "simulation_invariants": 15,
+  "simulation_status": "passed",
+  "optional_asset_store_models": "not included and not required",
+  "windows_build": "success",
+  "windows_manual_smoke": "not repeated for public build; historical local build smoke is separately documented",
+  "windows_build_checked_at": "2026-10-30T09:46:11.606886+08:00",
+  "release_asset": {
+    "file": "CampusEngineer-Windows-v0.3-public.zip",
+    "bytes": 39714973,
+    "sha256": "e4d3424d0f02800f2325d3e1156436f6f9dcece4fe36a3ba19b4bef379ca88df"
+  }
+}
