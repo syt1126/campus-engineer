@@ -23,3 +23,5 @@
 ## Windows 公开试玩包
 
 公开源码版 Windows 构建成功，压缩包 CRC 与 SHA-256 已检查。该包的完整人工试玩没有在此次上传中重走；Unity 场景集成和历史本地 Windows 人工检查的范围分别见上文。
+
+由于 GitHub Release 附件接口从此电脑传输大文件超时，校验过的 Windows ZIP 直接存放在仓库 downloads/ 目录；下载后用同目录 SHA256SUMS.txt 校验。

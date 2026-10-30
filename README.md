@@ -44,7 +44,7 @@
 
 ## 下载试玩
 
-[下载 Windows 公开试玩版](https://github.com/syt1126/campus-engineer/releases/tag/v0.3.0-public)。完整解压后打开 `CampusEngineer.exe`，无需安装 Unity。此为开发预览版。
+[下载 Windows 公开试玩版](https://github.com/syt1126/campus-engineer/blob/main/downloads/CampusEngineer-Windows-v0.3-public.zip)。完整解压后打开 `CampusEngineer.exe`，无需安装 Unity。此为开发预览版。
 
 ## 快速运行
 

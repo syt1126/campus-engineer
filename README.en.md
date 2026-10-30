@@ -26,7 +26,7 @@ Screenshots and the animation above were recaptured from this public source edit
 
 ## Windows preview
 
-[Download the development preview](https://github.com/syt1126/campus-engineer/releases/tag/v0.3.0-public), extract the whole folder, and run `CampusEngineer.exe`. Unity is not required to play the build.
+[Download the development preview](https://github.com/syt1126/campus-engineer/blob/main/downloads/CampusEngineer-Windows-v0.3-public.zip), extract the whole folder, and run `CampusEngineer.exe`. Unity is not required to play the build.
 
 ## Run from source
 
